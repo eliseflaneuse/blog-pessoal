@@ -7,7 +7,7 @@ const Home = () => {
   const { nome, setNome } = useContext(UserContext);
 
   return (
-    <section className="mt-12 ml-12 mr-12 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+    <section className="mt-12 ml-10 mr-10 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row lg:ml-12 lg:mr-12">
       {/* content - start */}
       <div className="flex flex-col justify-between xl:w-5/12">
         <div></div>
@@ -33,10 +33,10 @@ const Home = () => {
               Login
             </button>
            
-            <Link to='/login'
+            <Link to='/home'
               className="inline-block  rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
             >
-            Login por Link
+            Home
             </ Link>
           </div>
         </div>

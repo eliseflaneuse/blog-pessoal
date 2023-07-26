@@ -25,6 +25,7 @@ const Navbar = () => {
 
       {/* nav - start */}
       <nav className={`gap-12 lg:flex ${isDropdownOpen ? 'hidden' : 'lg:block'} lg:items-center lg:w-auto md:hidden sm:hidden `}>
+        
         <Link to="#" className="text-lg font-semibold text-indigo-500" onClick={closeDropdown}>
           Postagens
         </Link>
