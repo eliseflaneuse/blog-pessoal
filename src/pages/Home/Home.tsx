@@ -1,7 +1,11 @@
+import { useContext } from 'react';
+import { UserContext } from '../../contexts/UserContext';
 import { useNavigate, Link } from "react-router-dom";
 
 const Home = () => {
   let navigate = useNavigate();
+  const { nome, setNome } = useContext(UserContext);
+
   return (
     <section className="mt-12 ml-12 mr-12 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
       {/* content - start */}
@@ -16,6 +20,7 @@ const Home = () => {
           <h1 className="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl lg:text-6xl">
             Revolution  build the web
           </h1>
+          <h2 className="mb-8 text-2xl font-bold text-black sm:text-5xl md:mb-12 md:text-4xl lg:text-4xl ">Olá {nome}</h2>
 
           <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">
             <button
