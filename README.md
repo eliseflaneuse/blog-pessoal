@@ -1,4 +1,4 @@
-# Project Name - Blog Pessoal Frontend
+# Blog Pessoal Frontend
 
 ## Description
 
