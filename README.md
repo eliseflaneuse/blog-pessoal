@@ -1,27 +1,66 @@
-# React + TypeScript + Vite
+# Project Name - Blog Pessoal Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This repository contains the frontend part of the Blog project, built using Vite, TypeScript, React, and Axios. The Blog project is a web application that allows users to read and create blog posts. It connects to the backend hosted on Render using Axios for API calls.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- Vite
+- TypeScript
+- React
+- Axios
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- User authentication and login functionality
+- View and read blog posts
+- Create new blog posts
+- Edit and delete existing blog posts
+- Like and comment on blog posts
+- Responsive design for mobile and desktop
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Setup and Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository: `git clone https://github.com/eliseflaneuse/blog-pessoal`
+2. Navigate to the project directory: `cd blog-pessoal`
+3. Install dependencies: `npm install` + yarn
+4. Create a `.env` file with the necessary environment variables (e.g., API base URL, authentication tokens).
+5. Start the development server: `yarn run dev`
+
+## How to Use
+
+- Register or login using your credentials to access the blog.
+- Browse existing blog posts, read their content, and leave comments.
+- Create new blog posts with your own content.
+- Edit or delete your own blog posts.
+- Like and comment on posts from other users.
+
+## Backend Connection
+
+The frontend is connected to the backend hosted on Render using Axios for making API requests. The API base URL is specified in the `.env` file.
+To acess the backend code go to `https://github.com/eliseflaneuse/blogpessoal`
+
+## Folder Structure
+
+- `src`: Contains the main source code files for the frontend.
+  - `assets`: Images and Fonts.
+  - `components`: Reusable UI components.
+  - `contexts`: Authorization and Context Providers.
+  - `pages`: Individual page components.
+  - `services`: API service functions (e.g., Axios requests).
+  - `models`: TypeScript interfaces and models.
+- `public`: Contains the public assets (e.g., images).
+- `dist`: Output directory for the build.
+
+## Contributing
+
+Contributions are welcome! Please follow the standard guidelines and conventions for making pull requests. Feel free to open an issue for bug reports or feature requests.
+
+## License
+
+This project is licensed under the [MIT License](link-to-license-file). You are free to use, modify, and distribute the code for both personal and commercial purposes.
+
+## Contact
+
+For any inquiries or support, please contact [eliseflaneuse@gmail.com](mailto:eliseflaneuse@gmail.com).
