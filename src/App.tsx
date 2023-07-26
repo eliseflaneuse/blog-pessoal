@@ -1,31 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { useState } from "react";
-import Card from "./components/Card/Card";
-import Contador from "./components/Contador/Contador";
 import Home from "./components/Home/Home";
-import Task from "./components/Task/Task";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <>
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
 
 export default App;
-
-/*Props
-   <>
-    <Card   title="Component Card"
-            description="Este é um componente Card que recebe props."/>
-  </>
-  */
-
-/*
-  useState and useEffect
-  <>
-  <Contador />
-  <Task />
-  </>
-  */
