@@ -1,7 +1,14 @@
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 function Footer() {
-  return (
-    <div className="bg-white pt-4 sm:pt-10 lg:pt-12">
+  const { usuario, handleLogout } = useContext(AuthContext);
+
+  let footerComponent;
+
+  if (usuario.token !== "") {
+    footerComponent = (
+      <div className="bg-white pt-4 sm:pt-10 lg:pt-12">
     <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
       <div className="flex flex-col items-center border-t pt-6">
         <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
@@ -102,6 +109,13 @@ function Footer() {
       </div>
     </footer>
   </div>
+
+    )
+  }
+  return (
+    <>
+    {footerComponent}
+    </>
   )
 }
 
