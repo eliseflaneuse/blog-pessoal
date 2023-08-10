@@ -6,7 +6,7 @@ import ModalPostagem from "../../components/Postagens/modalPostagem/ModalPostage
 
 const Home = () => {
   let navigate = useNavigate();
-  const { nome, setNome } = useContext(UserContext);
+  const { nome } = useContext(UserContext);
 
   return (
     <>
